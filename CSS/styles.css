@@ -1,0 +1,166 @@
+body{
+    font-family: arial;
+    font-size: 16px;
+    /* Location of the image */
+  background-image: url(../img/126399.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header{
+    overflow: hidden;
+}
+
+header .tab-trigger{
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#imagen1{
+    margin-top: 400px;
+    margin-left: 80px;
+}
+
+#imagen2{
+    margin-left: 1190px;
+    margin-top: 400px;
+    margin-right: 80px;
+}
+
+header h1{
+    margin: 0;
+}
+
+iframe{
+    margin-top: 10%;
+}
+
+p{
+    text-align: justify;
+    margin: 40px;
+    line-height: 30px;
+}
+
+.tab-trigger{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-trigger ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.tab-trigger ul li label:hover{
+    background-color: rgb(211, 15, 15);
+}
+
+
+.tab-trigger ul li label{
+    position: relative;
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+    min-width: 100px;
+    background-color: #a7263cce;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-wrap{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+
+.tab-wrap input{
+    position: absolute;
+    display: none;
+}
+
+.tab-wrap input:checked + .tab-content{
+    display: block;
+}
+
+.tab-content{
+    padding: 20px;
+    display: none;
+    width: 800px;
+    border-radius: 8px;
+    background-color: rgba(122, 111, 111, 0.616);
+    height: 80%;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 180%;
+}
+
+.imagen{
+    width: 280px;
+    height: 170px;
+}
+
+.contenidoH{
+    position: absolute;
+    z-index: -2;
+}
+
+.contenidoH1{
+    position: absolute;
+    z-index: -3;
+}
+
+.contenidoH2{
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+    overflow: hidden;
+}
+
+#mario {
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 100%;
+    }
+  }
